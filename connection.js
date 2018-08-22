@@ -1,7 +1,7 @@
 'use strict';
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/test')
+mongoose.connect('mongodb://localhost/test',{useNewUrlParser:true})
 .then(()=>{
 	console.log('connected to db')
 })
